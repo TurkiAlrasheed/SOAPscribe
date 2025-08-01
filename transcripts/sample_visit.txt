@@ -1,0 +1,4 @@
+Doctor: Hello, what brings you in today?
+Patient: I've had a sore throat and mild fever for three days.
+Doctor: Any other symptoms?
+Patient: Just a bit tired.

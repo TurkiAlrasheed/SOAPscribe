@@ -1,0 +1,8 @@
+{
+  "subjective": "The patient reports a sore throat and mild fever for the past three days, along with feeling tired.",
+  "objective": "Physical examination not documented in this transcript, but may include inspection of throat and oral cavity, measurement of temperature.",
+  "assessment": "Possible diagnosis could be a viral upper respiratory infection. The patient's symptoms are non-specific and do not indicate a bacterial infection at this point.",
+  "plan": "Recommend rest, hydration, and over-the-counter medications for symptom relief. If symptoms persist or worsen, consider further evaluation such as strep throat test or referral to specialist.",
+  "patient_id": "sample_visit",
+  "flags": []
+}
