@@ -25,3 +25,14 @@ def notify_doctor(patient_id, missing_subjective, missing_objective):
         subject=f"AutoNote Alert: Missing SOAP Fields for Patient {patient_id}",
         contents=body
     )
+
+def generate_soap_note(info):
+    return f"""
+S: {info['subjective']}
+
+O: {info['objective']}
+
+A: {info['assessment']}
+
+P: {info['plan']}
+""".strip()
