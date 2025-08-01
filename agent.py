@@ -4,6 +4,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from note_templates import generate_soap_note
 from extractors import extract_with_mistral
+from helper_funcs import needs_clarification, notify_doctor
 import json
 
 TRANSCRIPTS_DIR = "transcripts"
