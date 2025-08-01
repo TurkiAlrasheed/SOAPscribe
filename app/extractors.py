@@ -1,4 +1,8 @@
 import requests
+import os
+
+OLLAMA_URL = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+
 
 def extract_with_mistral(transcript):
     prompt = f"""
@@ -83,6 +87,6 @@ Transcript:
             return eval(result)  # replace with ast.literal_eval() if security matters
 
     except Exception as e:
-        print("❌ Mistral failed:", e)
+        print("❌ llama failed:", e)
 
     return None

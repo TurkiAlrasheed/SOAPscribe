@@ -1,0 +1,13 @@
+Doctor: Good morning. What brings you in today?  
+Patient: I've been feeling really congested and tired for the last few days.  
+Doctor: Any cough or sore throat?  
+Patient: Yes, I’ve had a dry cough and a bit of a sore throat since Monday.  
+Doctor: Any fever?  
+Patient: I had a low-grade fever two nights ago, but it went away.  
+Doctor: Are you taking any medications right now?  
+Patient: Just some Tylenol for the fever.  
+Doctor: Any allergies?  
+Patient: No, none that I know of.  
+Doctor: Okay. On examination, your throat looks slightly red, and your temperature is normal at 98.6°F. Lungs are clear on auscultation.  
+Doctor: I think this is likely a viral upper respiratory infection.  
+Doctor: Continue taking Tylenol as needed, rest, drink fluids, and call back if things don’t improve within a week. No antibiotics for now.
