@@ -2,7 +2,7 @@ import time
 import os
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-from extractors import extract_with_mistral
+from extractors import extract_with_llama
 from helper_funcs import needs_clarification, notify_doctor,generate_soap_note
 import json
 
@@ -22,7 +22,7 @@ def process_transcript(filepath):
         content = f.read()
 
     # Simulated extraction
-    extracted_info = extract_with_mistral(content)
+    extracted_info = extract_with_llama(content)
 
     # Generate SOAP note text
     note_text = generate_soap_note(extracted_info)

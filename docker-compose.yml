@@ -1,12 +1,11 @@
-version: "3.8"
-
 services:
   ollama:
-    image: ollama/ollama
+    image: ollama/ollama:latest  
     ports:
       - "11434:11434"
     volumes:
-      - ollama:/root/.ollama
+      - ${HOME}/.ollama:/root/.ollama
+    entrypoint: ["/bin/sh", "-c", "ollama serve & sleep 3 && ollama run llama3:8b"]
 
   autonote:
     build:

@@ -1,7 +1,7 @@
-S: Patient reports feeling congested, tired, and having dry cough and sore throat since Monday.
+S: Patient reports feeling congested and tired, dry cough, sore throat since Monday, low-grade fever two nights ago.
 
-O: Throat looks slightly red; temperature is normal at 98.6°F; lungs are clear on auscultation.
+O: Throat looks slightly red, temperature is normal at 98.6°F, lungs are clear on auscultation
 
-A: Likely viral upper respiratory infection
+A: Likely a viral upper respiratory infection
 
-P: Continue taking Tylenol as needed, rest, drink fluids, and call back if things don’t improve within a week; no antibiotics for now.
+P: Continue taking Tylenol as needed, rest, drink fluids, and call back if things don’t improve within a week

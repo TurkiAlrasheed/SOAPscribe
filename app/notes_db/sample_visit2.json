@@ -1,8 +1,8 @@
 {
-  "subjective": "Patient reports feeling congested, tired, and having dry cough and sore throat since Monday.",
-  "objective": "Throat looks slightly red; temperature is normal at 98.6\u00b0F; lungs are clear on auscultation.",
-  "assessment": "Likely viral upper respiratory infection",
-  "plan": "Continue taking Tylenol as needed, rest, drink fluids, and call back if things don\u2019t improve within a week; no antibiotics for now.",
+  "subjective": "Patient reports feeling congested and tired, dry cough, sore throat since Monday, low-grade fever two nights ago.",
+  "objective": "Throat looks slightly red, temperature is normal at 98.6\u00b0F, lungs are clear on auscultation",
+  "assessment": "Likely a viral upper respiratory infection",
+  "plan": "Continue taking Tylenol as needed, rest, drink fluids, and call back if things don\u2019t improve within a week",
   "patient_id": "sample_visit2",
   "flags": []
 }

@@ -4,7 +4,7 @@ import os
 OLLAMA_URL = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 
 
-def extract_with_mistral(transcript):
+def extract_with_llama(transcript):
     prompt = f"""
 You are a strict AI assistant helping doctors extract accurate SOAP notes from patient transcripts. You MUST follow the exact instructions below. If you break any rule, your output will be rejected.
 
@@ -71,7 +71,7 @@ Transcript:
 
     try:
         response = requests.post(
-            "http://localhost:11434/api/generate",
+            f"{OLLAMA_URL}/api/generate",
             json={
                 "model": "llama3:8b",
                 "prompt": prompt,
