@@ -1,12 +1,12 @@
 services:
   ollama:
-    image: ollama/ollama:latest  
+    image: ollama/ollama:latest
     ports:
       - "11434:11434"
     volumes:
       - ${HOME}/.ollama:/root/.ollama
-    entrypoint: ["/bin/sh", "-c", "ollama serve & sleep 3 && ollama run llama3:8b"]
-
+    entrypoint: /bin/sh
+    command: -c "ollama serve & sleep 5 && ollama run llama3:8b && tail -f /dev/null"
   autonote:
     build:
       context: .
@@ -17,7 +17,7 @@ services:
     volumes:
       - ./app:/app
     working_dir: /app
-    command: python agent.py
+    command: python -u agent.py
 
 volumes:
   ollama:
