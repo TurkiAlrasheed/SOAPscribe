@@ -31,7 +31,7 @@ SOAPscribe is an AI agent that monitors a folder for new patient-doctor transcri
    - From the same location where you cloned the repo (e.g., `~/Desktop`), run:
 
      ```bash
-     python3 SOAPscribe/app/setup_email.py
+     python3 app/setup_email.py
      ```
 
    - Enter the requsted information
