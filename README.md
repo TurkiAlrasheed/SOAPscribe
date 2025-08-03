@@ -12,10 +12,11 @@ SOAPscribe is an AI agent that monitors a folder for new patient-doctor transcri
 
    - [Mac & Windows (Docker Desktop)](https://www.docker.com/products/docker-desktop/)
 
-2. **Clone the repo**:
+2. **Clone the repo and  navigate into the project folder**:
 
    ```bash
    git clone https://github.com/TurkiAlrasheed/SOAPscribe.git
+   cd SOAPscribe
 
    ```
 
