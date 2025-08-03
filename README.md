@@ -37,7 +37,11 @@ SOAPscribe is an AI agent that monitors a folder for new patient-doctor transcri
 
    This will securely save your email settings to a `.env` file.
 
-4. docker compose up --build
+4.
+   ```bash
+     docker compose up --build
+     ```
+  
 
 ---
 
