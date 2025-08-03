@@ -1,6 +1,6 @@
 # SOAPscribe
 
-SOAPscribe is an AI agent that monitors a folder for new patient-doctor transcript `.txt` files and automatically extracts a structured **SOAP note** using the `llama3:8b` language model via [Ollama](https://ollama.com/). If any essential sections like Subjective or \*\*Objective are missing, AutoNote sends an email alert to the doctor.
+SOAPscribe is an AI agent that monitors a folder for new patient-doctor transcript `.txt` files and automatically extracts a structured **SOAP note** using the `llama3:8b` language model via [Ollama](https://ollama.com/). If any essential sections like Subjective or Objective are missing, AutoNote sends an email alert to the doctor.
 
 ---
 
