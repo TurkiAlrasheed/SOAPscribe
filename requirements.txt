@@ -1,3 +1,4 @@
 watchdog
 requests
 yagmail
+python-dotenv

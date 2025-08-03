@@ -1,5 +1,6 @@
 import requests
 import os
+import json
 
 OLLAMA_URL = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 
@@ -75,19 +76,27 @@ Transcript:
     try:
         response = requests.post(
             f"{OLLAMA_URL}/api/generate",
-            json={
-                "model": "llama3:8b",
-                "prompt": prompt,
-                "stream": False
-            },
+            json={"model": "llama3:8b", "prompt": prompt, "stream": False},
             timeout=60
         )
         content = response.json().get("response", "")
 
-        # Extract dictionary from text (you can make this safer with regex or ast)
-        if "{" in content:
-            result = content[content.index("{") : content.rindex("}") + 1]
-            return eval(result)  # replace with ast.literal_eval() if security matters
+
+        start = content.find("{")
+        end = content.rfind("}") + 1
+
+        # 🔐 Fallback: if model forgot closing }, assume end of string
+        if start == -1:
+            raise ValueError("JSON opening brace not found")
+        if end <= start:
+            content = content[start:].strip()
+            if not content.endswith("}"):
+                content += "}"
+
+        else:
+            content = content[start:end]
+
+        return json.loads(content)
 
     except Exception as e:
         print("❌ llama failed:", e)

@@ -3,7 +3,7 @@ import os
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from extractors import extract_with_llama
-from helper_funcs import needs_clarification, notify_doctor,generate_soap_note
+from helper_funcs import notify_doctor,generate_soap_note
 import json
 
 TRANSCRIPTS_DIR = "transcripts"
@@ -33,6 +33,8 @@ def process_transcript(filepath):
     with open(note_path, 'w') as f:
         f.write(note_text)
     print(f"SOAP note saved to: {note_path}")
+
+    notify_doctor(base_filename, extracted_info)
 
     # Save structured JSON to mock EMR db
     db_record = extracted_info.copy()

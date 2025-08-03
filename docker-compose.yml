@@ -12,6 +12,8 @@ services:
       context: .
     depends_on:
       - ollama
+    env_file:
+      - .env
     environment:
       - OLLAMA_HOST=http://ollama:11434
     volumes:
