@@ -39,7 +39,7 @@ SOAPscribe is an AI agent that monitors a folder for new patient-doctor transcri
 
 4. **Build the app**
    ```bash
-     docker compose up --build
+   docker compose up --build
      ```
   
 
